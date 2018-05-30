@@ -117,12 +117,10 @@
     <script type="text/javascript">
         function CheckLogin()
         {
-              LoginSuccessfully("登录成功，欢迎访问！");
-              return;
             var UserName=document.getElementById("UserNameTextBox").value;
             var Password=document.getElementById("PasswordTextBox").value;
             if(UserName == "Leon" && Password == "IamLeon")
-            ;
+              LoginSuccessfully("登录成功，欢迎访问！");
             else
               LoginFailed("无效的用户名或密码");
         }
